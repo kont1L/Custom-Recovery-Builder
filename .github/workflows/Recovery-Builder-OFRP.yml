@@ -136,7 +136,7 @@ jobs:
         export TERM=xterm-256color
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
-        lunch fox_KL7-bp2a-eng && mka vendorbootimage
+        lunch fox_KL7-bp2a-userdebug && mka vendorbootimage -j10
       
     - name: Set Build Date # Output will be use in Release
       run: |
