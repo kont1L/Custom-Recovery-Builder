@@ -133,6 +133,7 @@ jobs:
       run: |
         cd android-recovery
         export FOX_BUILD_DEVICE=KL7
+        export TERM=xterm-256color
         source build/envsetup.sh
         export ALLOW_MISSING_DEPENDENCIES=true
         lunch fox_KL7-bp2a-eng && mka vendorbootimage
