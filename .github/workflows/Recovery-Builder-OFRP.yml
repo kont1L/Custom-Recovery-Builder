@@ -129,13 +129,6 @@ jobs:
         fi
       continue-on-error: true
 
-    - name: Fixed Missing Fonts
-      run: |
-        cd android-recovery
-        cd external/noto-fonts/other
-        wget https://github.com/cd-Crypton/custom-recovery-extras/raw/main/missing-font.zip
-        unzip -o missing-font.zip
-
     - name: Building Image
       run: |
         cd android-recovery
